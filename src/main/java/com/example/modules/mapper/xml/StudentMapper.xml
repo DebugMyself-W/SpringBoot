@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.example.modules.mapper.StudentMapper">
+    <select id="getStudentByName" resultType="com.example.modules.entity.Student">
+        select * from student where name like '王信权%'
+    </select>
+</mapper>
