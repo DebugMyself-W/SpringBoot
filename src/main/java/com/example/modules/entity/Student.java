@@ -1,8 +1,10 @@
 package com.example.modules.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class Student {
 
     private String id;
@@ -11,5 +13,12 @@ public class Student {
 
     private Integer age;
 
-    private String sex;
+    private String classNum;
+
+    public Student(String id, String name, int age, String classNum) {
+        this.id=id;
+        this.name=name;
+        this.age=age;
+        this.classNum =classNum;
+    }
 }
